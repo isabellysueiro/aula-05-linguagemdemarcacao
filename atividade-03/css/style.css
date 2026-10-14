@@ -1,0 +1,74 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração da página */
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    background-color: #191f2a;
+}
+
+/* Área principal */
+.pagina {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* Banner */
+.banner {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 100px; /* Desce a imagem */
+}
+
+/* Menu abaixo da imagem */
+.menu {
+    width: 100%;
+    min-height: 44px;
+    background-color: #191f2a;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    padding: 12px 10px;
+}
+
+/* Links do menu */
+.menu a {
+    color: #e6e6e6;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+}
+
+/* Ajustes para celular */
+@media (max-width: 600px) {
+    .banner {
+        margin-top: 40px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+}
